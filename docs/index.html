@@ -23,25 +23,25 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100dvh; /* καλύτερο για mobile */
             padding: 20px;
             text-align: center;
         }
 
         h1 {
-            font-size: 3.2rem;
+            font-size: clamp(2rem, 6vw, 3.2rem);
             margin-bottom: 15px;
             color: #a05a2c; /* caramel */
         }
 
         p {
-            font-size: 1.4rem;
+            font-size: clamp(1rem, 3.5vw, 1.4rem);
             margin-bottom: 15px;
         }
 
         /* Cookie flottant 🍪 */
         .cookie {
-            font-size: 5rem;
+            font-size: clamp(3rem, 12vw, 5rem);
             margin-bottom: 20px;
             animation: float 2s ease-in-out infinite;
         }
@@ -54,7 +54,7 @@
         footer {
             position: absolute;
             bottom: 15px;
-            font-size: 0.9rem;
+            font-size: clamp(0.7rem, 2.5vw, 0.9rem);
             color: #a06b3c;
         }
     </style>
@@ -68,7 +68,6 @@
     <p> 🤎 Meilleurs koulourakia du monde faits avec amour 🤎</p>
     <p>Notre site est au four… sortira chaud et croustillant très bientôt !</p>
     <p>Patience… ça va être délicieux ! 🥳🍪</p>
-
 
     <footer>© 2025 Karavaki Art</footer>
 </body>
