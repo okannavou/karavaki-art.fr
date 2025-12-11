@@ -8,126 +8,42 @@
     <!-- Police élégante -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Playfair Display', serif;
-    }
-
-    body {
-        background: #fff8e7; /* crème biscuit */
-        color: #8b4a2b; /* chocolat doux */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100dvh;
-        padding: 30px;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: clamp(2rem, 6vw, 3.2rem);
-        margin-bottom: 35px; /* περισσότερο διάστημα */
-        color: #a05a2c; /* caramel */
-        line-height: 1.2;
-    }
-
-    p {
-        font-size: clamp(1rem, 3.5vw, 1.4rem);
-        margin-bottom: 20px;
-        line-height: 1.6; /* καλύτερη αναγνωσιμότητα */
-    }
-
-    .cookie {
-        font-size: clamp(3rem, 12vw, 5rem);
-        margin-bottom: 35px;
-        animation: float 2s ease-in-out infinite;
-    }
-
-    @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-18px); }
-    }
-
-    footer {
-        position: absolute;
-        bottom: 15px;
-        font-size: clamp(0.7rem, 2.5vw, 0.9rem);
-        color: #a06b3c;
-    }
-
-    a {
-        color: #a0522d;
-        text-decoration: none;
-        font-weight: bold;
-        border-bottom: 2px solid #a0522d;
-        padding-bottom: 2px;
-        transition: all 0.3s ease;
-    }
-
-    a:hover {
-        color: #8b3f1a;
-        border-color: #8b3f1a;
-    }
-
-    /* Responsive για κινητά */
-    @media (max-width: 600px) {
-        body {
-            padding: 20px;
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
         }
-
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 25px;
-        }
-
-        p {
-            font-size: 1rem;
-            margin-bottom: 15px;
-        }
-
-        .cookie {
-            font-size: 4rem;
-            margin-bottom: 25px;
-        }
-
-        footer {
-            font-size: 0.8rem;
-        }
-    }
-</style>
-
 
         body {
             background: #fff8e7; /* crème biscuit */
             color: #8b4a2b; /* chocolat doux */
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between; /* κεντράρει περιεχόμενο + footer κάτω */
             align-items: center;
-            min-height: 100dvh; /* καλύτερο για mobile */
-            padding: 20px;
+            min-height: 100dvh;
+            padding: 40px 20px 20px 20px;
             text-align: center;
         }
 
         h1 {
             font-size: clamp(2rem, 6vw, 3.2rem);
-            margin-bottom: 15px;
-            color: #a05a2c; /* caramel */
+            margin-bottom: 30px;
+            color: #a05a2c;
+            line-height: 1.2;
         }
 
         p {
             font-size: clamp(1rem, 3.5vw, 1.4rem);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
 
-        /* Cookie flottant 🍪 */
         .cookie {
             font-size: clamp(3rem, 12vw, 5rem);
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             animation: float 2s ease-in-out infinite;
         }
 
@@ -137,10 +53,45 @@
         }
 
         footer {
-            position: absolute;
-            bottom: 15px;
             font-size: clamp(0.7rem, 2.5vw, 0.9rem);
             color: #a06b3c;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #a0522d;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid #a0522d;
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #8b3f1a;
+            border-color: #8b3f1a;
+        }
+
+        /* Responsive για κινητά */
+        @media (max-width: 600px) {
+            body {
+                padding: 30px 15px 20px 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 15px;
+            }
+
+            .cookie {
+                font-size: 4rem;
+                margin-bottom: 25px;
+            }
         }
     </style>
 </head>
@@ -154,10 +105,10 @@
     <p>Notre site est au four… sortira chaud et croustillant très bientôt !</p>
     <p>Patience… ça va être délicieux ! 🥳🍪</p>
 
-    <p style="margin-top: 2rem; text-align: center;">
+    <p style="margin-top: 2rem;">
         Déjà envie d’y goûter ? On vous comprend !<br>
         Contactez-nous pour vos commandes à : 
-        <a href="mailto:koulouraki@karavaki-art.fr" style="color: #a0522d; text-decoration: none; font-weight: bold;"> koulouraki@karavaki-art.fr </a>
+        <a href="mailto:koulouraki@karavaki-art.fr">koulouraki@karavaki-art.fr</a>
     </p>
 
     <footer>© 2025 Karavaki Art</footer>
